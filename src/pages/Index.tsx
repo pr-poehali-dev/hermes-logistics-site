@@ -76,7 +76,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Zap" className="text-primary" size={32} />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-primary">
               Гермес Логистик
             </span>
           </div>
@@ -86,20 +86,17 @@ const Index = () => {
             <a href="#portfolio" className="text-foreground hover:text-primary transition-colors">Портфолио</a>
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+          <Button className="bg-primary hover:bg-primary/90">
             Заказать доставку
           </Button>
         </div>
       </nav>
 
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent"></div>
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
               Доставка туда, где другие останавливаются
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
@@ -107,7 +104,7 @@ const Index = () => {
               Гарантия, скорость, надежность.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
                 <Icon name="Send" className="mr-2" size={20} />
                 Рассчитать маршрут
               </Button>
@@ -148,7 +145,7 @@ const Index = () => {
                 style={{ animationDelay: `${i * 100}ms` }}
               >
                 <CardHeader>
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+                  <div className="w-14 h-14 rounded-xl bg-primary flex items-center justify-center mb-4">
                     <Icon name={service.icon} className="text-white" size={28} />
                   </div>
                   <CardTitle className="text-xl">{service.title}</CardTitle>
@@ -170,7 +167,7 @@ const Index = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="relative aspect-square bg-gradient-to-br from-muted to-muted/50 rounded-3xl p-8 overflow-hidden shadow-2xl">
+            <div className="relative aspect-square bg-muted rounded-3xl p-8 overflow-hidden shadow-2xl">
               <div className="absolute inset-0 opacity-10">
                 {[...Array(20)].map((_, i) => (
                   <div
@@ -259,7 +256,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="border-2 border-secondary/20 bg-gradient-to-br from-secondary/5 to-transparent">
+              <Card className="border-2 border-secondary/20 bg-secondary/5">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center flex-shrink-0">
@@ -294,7 +291,7 @@ const Index = () => {
                 className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
                 style={{ animationDelay: `${i * 150}ms` }}
               >
-                <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
+                <div className="h-48 bg-primary/20 flex items-center justify-center">
                   <Icon name={project.image} size={80} className="text-primary/60" />
                 </div>
                 <CardHeader>
@@ -353,7 +350,7 @@ const Index = () => {
                   <label className="text-sm font-medium">Сообщение</label>
                   <Textarea placeholder="Расскажите о вашем грузе и маршруте..." rows={4} />
                 </div>
-                <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+                <Button className="w-full bg-primary hover:bg-primary/90">
                   <Icon name="Send" className="mr-2" size={18} />
                   Отправить заявку
                 </Button>
@@ -403,7 +400,7 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-primary to-secondary text-white border-0">
+              <Card className="bg-primary text-white border-0">
                 <CardContent className="pt-6">
                   <div className="text-center">
                     <Icon name="Clock" className="mx-auto mb-4" size={48} />
