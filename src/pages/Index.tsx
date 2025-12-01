@@ -74,11 +74,8 @@ const Index = () => {
     <div className="min-h-screen">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Zap" className="text-primary" size={32} />
-            <span className="text-2xl font-bold text-primary">
-              Гермес Логистик
-            </span>
+          <div className="flex items-center gap-3">
+            <img src="https://cdn.poehali.dev/files/2be3228b-8fc1-497b-8b35-98df04baf41f.png" alt="Hermes Logistic" className="h-12" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
@@ -421,9 +418,8 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Zap" size={28} />
-                <span className="text-xl font-bold">Гермес Логистик</span>
+              <div className="mb-4">
+                <img src="https://cdn.poehali.dev/files/2be3228b-8fc1-497b-8b35-98df04baf41f.png" alt="Hermes Logistic" className="h-16 brightness-0 invert" />
               </div>
               <p className="text-gray-400">
                 Надежная доставка в труднодоступные регионы с 2009 года
