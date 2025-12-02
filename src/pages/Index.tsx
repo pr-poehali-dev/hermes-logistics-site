@@ -90,7 +90,14 @@ const Index = () => {
       </nav>
 
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/7a54362b-d022-4fdd-9ed5-6d70852eb35a/files/f655593a-111a-4ac6-995e-4659c61d32d2.jpg" 
+            alt="Логистика" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background"></div>
+        </div>
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
@@ -288,8 +295,17 @@ const Index = () => {
                 className="overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in"
                 style={{ animationDelay: `${i * 150}ms` }}
               >
-                <div className="h-48 bg-primary/20 flex items-center justify-center">
-                  <Icon name={project.image} size={80} className="text-primary/60" />
+                <div className="h-48 relative overflow-hidden">
+                  <img 
+                    src={i === 0 
+                      ? "https://cdn.poehali.dev/projects/7a54362b-d022-4fdd-9ed5-6d70852eb35a/files/f655593a-111a-4ac6-995e-4659c61d32d2.jpg"
+                      : i === 1 
+                      ? "https://cdn.poehali.dev/projects/7a54362b-d022-4fdd-9ed5-6d70852eb35a/files/5674fa12-5b44-4876-9de7-60710db61ea9.jpg"
+                      : "https://cdn.poehali.dev/projects/7a54362b-d022-4fdd-9ed5-6d70852eb35a/files/e5c12b13-b187-4d6f-972b-733b5eb9a668.jpg"
+                    }
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardHeader>
                   <CardTitle>{project.title}</CardTitle>
